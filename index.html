@@ -1,2 +1,183 @@
-test
-test
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEIICHIRO IZUOKA — PORTFOLIO</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #050507;
+      color: #e8eef5;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      line-height: 1.7;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 720px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    header {
+      border-bottom: 1px solid rgba(112, 214, 255, 0.25);
+      padding-bottom: 20px;
+    }
+
+    .label {
+      font-size: 11px;
+      color: #70d6ff;
+      letter-spacing: 0.12em;
+      margin-bottom: 6px;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      color: #ffffff;
+    }
+
+    .role {
+      font-size: 12px;
+      color: #8a99ad;
+      margin-top: 4px;
+    }
+
+    section h2 {
+      font-size: 12px;
+      color: #70d6ff;
+      letter-spacing: 0.1em;
+      margin-bottom: 14px;
+    }
+
+    .bio {
+      font-size: 13px;
+      color: #c8d2e0;
+    }
+
+    .work-card {
+      display: block;
+      text-decoration: none;
+      background: rgba(12, 16, 26, 0.85);
+      border: 1px solid rgba(112, 214, 255, 0.3);
+      padding: 20px 24px;
+      transition: all 0.2s ease;
+    }
+
+    .work-card:hover {
+      border-color: #70d6ff;
+      background: rgba(18, 25, 40, 0.95);
+      transform: translateY(-2px);
+    }
+
+    .work-meta {
+      font-size: 10.5px;
+      color: #ff5b52;
+      letter-spacing: 0.08em;
+      margin-bottom: 6px;
+    }
+
+    .work-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+
+    .work-desc {
+      font-size: 12px;
+      color: #9aa8ba;
+    }
+
+    .work-link-hint {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 11px;
+      color: #70d6ff;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 12px;
+    }
+
+    .links a {
+      color: #9aa8ba;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(112, 214, 255, 0.3);
+      padding-bottom: 2px;
+      transition: color 0.15s ease;
+    }
+
+    .links a:hover {
+      color: #70d6ff;
+    }
+
+    footer {
+      border-top: 1px solid rgba(112, 214, 255, 0.15);
+      padding-top: 16px;
+      font-size: 10.5px;
+      color: #66758a;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <div class="label">INDEX // ARCHIVE</div>
+      <h1>SEIICHIRO IZUOKA</h1>
+    </header>
+
+    <section>
+      <h2>01 // ABOUT</h2>
+      <p class="bio">
+        WebGL・リアルタイム音響合成・ジェネレーティブコードを用いたインタラクティブ表現の実験と制作を行っています。
+      </p>
+    </section>
+
+    <section>
+      <h2>02 // SELECTED WORKS</h2>
+      <a href="./chrono-astrolabe/" class="work-card">
+        <div class="work-meta">2026 // INTERACTIVE AUDIO-VISUAL ART (WebGL / p5.js)</div>
+        <div class="work-title">CHRONO-ASTROLABE // 創世の天体儀 ― VERNACULAR ASYLUM</div>
+        <p class="work-desc">
+          マウス操作とターミナルコマンド入力によって空間と電子音響をリアルタイムに生成・変容させるインタラクティブ天体儀。
+        </p>
+        <span class="work-link-hint">[ LAUNCH WORK &rarr; ]</span>
+      </a>
+    </section>
+
+    <section>
+      <h2>03 // CONTACT &amp; LINKS</h2>
+      <div class="links">
+<!-- 
+        <a href="mailto:[メールアドレス]">EMAIL</a>
+-->
+        <a href="https://github.com/seiichiroizuoka" target="_blank" rel="noopener">GITHUB</a>
+        <a href="https://instagram.com/seiichiro_izuoka/" target="_blank" rel="noopener">INSTAGRAM</a>
+        <a href="https://x.com/seiichiroizuoka" target="_blank" rel="noopener">X (TWITTER)</a>
+
+      </div>
+    </section>
+
+    <footer>
+      &copy; 2026 SEIICHIRO IZUOKA All Rights Reserved.
+    </footer>
+  </main>
+</body>
+</html>
