@@ -260,3 +260,29 @@ code {
   color: #b4c0d0;
   font-size: 9.5px;
 }
+
+.hud-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.back-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(154, 168, 186, 0.4);
+  color: #9aa8ba;
+  font-family: inherit;
+  font-size: 10px;
+  padding: 4px 8px;
+  letter-spacing: 0.05em;
+  transition: all 0.15s ease;
+}
+
+.back-btn:hover {
+  background: rgba(112, 214, 255, 0.16);
+  border-color: #70d6ff;
+  color: #ffffff;
+}
